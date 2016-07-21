@@ -1,0 +1,73 @@
+<!-- Home -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="resume-stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Mukta+Vaani:400,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+
+    <meta charset="UTF-8">
+    <title>Home | Resumé</title>
+  </head>
+  
+  <body>
+    <!-- 
+         _
+        [ ]
+       (   )
+        |>|
+     __/===\__
+    //| o=o |\\
+  <]  | o=o |  [>
+      \=====/
+     / / | \ \
+    <_________>
+
+      Run!!! Before the robot destroys you!
+-->
+    <div id="background">
+      <div id="center-banner">
+        <h1 class="fade-in" fade-delay="500">CHRISTOPHER SIERRA</h1>
+        <hr class="fade-in" fade-delay="750">
+        <h2 class="fade-in" fade-delay="1000">Resumé</h2>
+      </div>
+      <div id="footer-nav">
+        <a href="objective.html" class="fade-in" fade-delay="1300">Objective</a> <hr class="fade-in" fade-delay="1800">
+        <a href="education.html" class="fade-in" fade-delay="1400">Education</a> <hr class="fade-in" fade-delay="1800">
+        <a href="experience.html" class="fade-in" fade-delay="1500">Experience</a> <hr class="fade-in" fade-delay="1800">
+        <a href="skills.html" class="fade-in" fade-delay="1600">Skills</a> <hr class="fade-in" fade-delay="1800">
+        <a href="references.html" class="fade-in" fade-delay="1700">References</a>
+      </div>
+    </div>
+  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+
+window.onload = function() {
+      $(".fade-in").each(function(i, e) {
+        console.log(e);
+        setTimeout(function() {
+          $(e).css("opacity", 1);
+        }, Number($(e).attr("fade-delay")));
+      });
+    }
+
+$(window).load(function(){
+  $("#background").css("height", $(window).height());
+});
+
+$(document).ready(function(){
+  $("#center-banner h1").fadeIn();
+});
+
+</script>
+</html>

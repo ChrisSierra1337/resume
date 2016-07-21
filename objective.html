@@ -1,0 +1,70 @@
+<!-- Objective -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="resume-stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Mukta+Vaani:400,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,100' rel='stylesheet' type='text/css'>
+
+    <meta charset="UTF-8">
+    <title>Objective | Resumé</title>
+  </head>
+  <body>
+    <div id="background-objective">
+      <div id="objective-title">
+          <h1 class="fade-in" fade-delay="300"><img src="properties/pictures/objective-o.png"><span style="display: none">O</span>bjectives</h1>
+      </div>
+      <div id="objective-list">
+        <ul>
+          <li><p class="fade-in" fade-delay="800"><img src="properties/pictures/dartboard.png">Find a company where my leadership, work ethic, and dedication can spread their wings</p></li>
+          <li><p class="fade-in" fade-delay="900"><img src="properties/pictures/dartboard.png">Seeking a position where I can advance my skills in software design</p></li>
+          <li><p class="fade-in" fade-delay="1000"><img src="properties/pictures/dartboard.png">Succeed in an enviorment where my colleagues and I can help eachother for the betterment of the company</p></li>
+          <li><p class="fade-in" fade-delay="1100"><img src="properties/pictures/dartboard.png">Find a community where learning is encouraged and questions are embraced</p></li>
+        </ul>
+      </div>
+      <div id="footer-nav">
+        <a href="index.html" class="fade-in" fade-delay="1300">Home</a> <hr class="fade-in" fade-delay="1800">
+        <a href="education.html" class="fade-in" fade-delay="1400">Education</a> <hr class="fade-in" fade-delay="1800">
+        <a href="experience.html" class="fade-in" fade-delay="1500">Experience</a> <hr class="fade-in" fade-delay="1800">
+        <a href="skills.html" class="fade-in" fade-delay="1600">Skills</a> <hr class="fade-in" fade-delay="1800">
+        <a href="references.html" class="fade-in" fade-delay="1700">References</a>
+      </div>
+    </div>
+  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+
+window.onload = function() {
+      $(".fade-in").each(function(i, e) {
+        console.log(e);
+        setTimeout(function() {
+          $(e).css("opacity", 1);
+        }, Number($(e).attr("fade-delay")));
+      });
+    }
+
+$(window).load(function(){
+  $("#background").css("height", $(window).height());
+  $("#background-objective").css("height", $(window).height());
+  $("#background-education").css("height", $(window).height());
+  $("#background-experience").css("height", $(window).height());
+  $("#background-skills").css("height", $(window).height());
+  $("#background-references").css("height", $(window).height());
+});
+
+$(document).ready(function(){
+  $("#center-banner h1").fadeIn();
+});
+
+</script>
+</html>

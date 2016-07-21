@@ -1,0 +1,72 @@
+<!-- Education -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="resume-stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Mukta+Vaani:400,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,100' rel='stylesheet' type='text/css'>
+
+    <meta charset="UTF-8">
+    <title>Education | Resumé</title>
+  </head>
+  <body>
+    <div id="background-education">
+        <div id="education-title">
+            <h1 class="fade-in" fade-delay="500">Education</h1>
+        </div>
+        <div id="education-content">
+            <p class="fade-in" fade-delay="700">Graduated from Christopher Columbus High School<a href="http://www.columbushs.com/" target=blank_><img src="properties/pictures/cchs-logo.png"></a></p>
+            <p class="fade-in" fade-delay="800">Relevant Courses</p>
+            <ul>
+                <li><p class="fade-in" fade-delay="850">&nbsp; &nbsp; &nbsp; AP Computer Science</p></li>
+                <li><p class="fade-in" fade-delay="900">&nbsp; &nbsp; &nbsp; Honors Computer Applications</p></li>
+                <li><p class="fade-in" fade-delay="950">&nbsp; &nbsp; &nbsp; Florida Vocational Institute Web Design Course<a href="http://www.fvi.edu/web-application-development" target=blank_><img src="properties/pictures/fvi-logo.jpeg" style="margin-top: -0.8rem;"></a></p></li>
+            </ul>
+        </div>
+    </div>
+      <div id="footer-nav">
+        <a href="index.html" class="fade-in" fade-delay="1300">Home</a> <hr class="fade-in" fade-delay="1800">
+        <a href="objective.html" class="fade-in" fade-delay="1400">Objective</a> <hr class="fade-in" fade-delay="1800">
+        <a href="experience.html" class="fade-in" fade-delay="1500">Experience</a> <hr class="fade-in" fade-delay="1800">
+        <a href="skills.html" class="fade-in" fade-delay="1600">Skills</a> <hr class="fade-in" fade-delay="1800">
+        <a href="references.html" class="fade-in" fade-delay="1700">References</a>
+      </div>
+    </div>
+  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+
+window.onload = function() {
+      $(".fade-in").each(function(i, e) {
+        console.log(e);
+        setTimeout(function() {
+          $(e).css("opacity", 1);
+        }, Number($(e).attr("fade-delay")));
+      });
+    }
+
+$(window).load(function(){
+  $("#background").css("height", $(window).height());
+  $("#background-objective").css("height", $(window).height());
+  $("#background-education").css("height", $(window).height());
+  $("#background-experience").css("height", $(window).height());
+  $("#background-skills").css("height", $(window).height());
+  $("#background-references").css("height", $(window).height());
+});
+
+$(document).ready(function(){
+  $("#center-banner h1").fadeIn();
+});
+
+</script>
+</html>

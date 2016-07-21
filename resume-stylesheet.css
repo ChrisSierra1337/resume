@@ -1,0 +1,449 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	width: 100%;
+	text-decoration: none;
+}
+
+.fade-in {
+	opacity: 0;
+	transition: all 1s;
+}
+
+p {
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+h2 {
+    color: white;
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Poiret One', cursive;
+}
+
+h6 {
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+}
+
+#background {
+    background: black url("properties/pictures/ironman.gif") no-repeat fixed 50% 50%;
+}
+
+#center-banner {
+    text-shadow: 5px 5px 5px rgba(10, 10, 10, 1);
+    font-family: 'Mukta Vaani', sans-serif;
+    position: absolute;
+    margin-top: 18%;
+    text-align: center;
+    color: white;
+}
+
+#center-banner h1 {
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#center-banner hr {
+    width: 40%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+#center-banner h2 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+#footer-nav {
+    bottom: 1rem;
+    position: absolute;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 2rem;
+}
+
+#footer-nav a {
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 1);
+    bottom: -1rem;
+    margin-left: 1.2rem;
+    position: relative;
+    margin-right: 1rem;
+    display: inline;
+}
+
+#footer-nav hr {
+    display: inline-block;
+    position: absolute;
+    width: 1px;
+    border: 0;
+    height: 2rem;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+}
+
+#footer-nav a:visited {
+    color: white;
+}
+
+#footer-nav a:hover {
+    color: red;
+}
+
+/* Objective */
+#background-objective {
+    position: fixed;
+    width: 100%;
+    background-image: url("properties/pictures/objective-chalk.jpg");
+    background-size: 100% auto;
+}
+
+#objective-title {
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+#objective-title img {
+    position: relative;
+    top: 0.5rem;
+    width: 5rem;
+}
+
+#objective-list {
+    padding: 1rem;
+    margin-top: 7rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    margin-left: 20%;
+    text-align: left;
+}
+
+#objective-list ul {
+    list-style-type: none;
+}
+
+#objective-list img {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Education */
+
+#background-education {
+    position: fixed;
+    width: 100%;
+    background-size: 100% auto;
+    background-image: url("properties/pictures/brain-bg.jpg");
+}
+
+#education-title h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#education-content {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 3rem;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#education-content img {
+    width: 3rem;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: -0.5rem;
+}
+
+#education-content ul {
+    list-style-type: none;
+}
+
+/* Experience */
+#background-experience {
+    position: fixed;
+    width: 100%;
+    background-size: 100% auto;
+    background-image: url("properties/pictures/mclaren-pov.jpg");
+}
+
+#experience-title {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#experience-content {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 3rem;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#experience-content ul {
+    list-style-type: none;
+}
+
+#experience-content img {
+    position: absolute;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 2rem;
+}
+
+#experience-content a:visited {
+    color: white;
+}
+
+#experience-content a:hover {
+    color: red;
+}
+
+/* Skills */
+#background-skills {
+    background-image: url("properties/pictures/ali-bg.jpg");
+}
+
+#skills-title h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#skill-levels {
+    margin-left: 25%;
+    width: 50%;
+}
+
+#java-prog-bar {
+    margin-top: 3rem;
+}
+
+#html-css-prog-bar {
+    margin-top: 3rem;
+}
+
+#js-prog-bar {
+    margin-top: 3rem;
+}
+
+
+/* progress bar */
+.progress-bar {
+	position: relative;
+    width: 80%;
+    height: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+/* java-progress */
+.javaprogress {
+    background: red;
+    height: 12px;
+    width: 0%;
+    max-width: 100%;
+    -webkit-animation: progress 2s 1 forwards;
+    -moz-animation: progress 2s 1 forwards;
+    -ms-animation: progress 2s 1 forwards;
+    animation: progress 2s 1 forwards;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+@-webkit-keyframes progress { 
+    from {  }
+
+    to { width: 65% }
+}
+
+@-moz-keyframes progress { 
+    from { }
+
+    to { width: 65% }
+}
+
+@-ms-keyframes progress { 
+    from { }
+
+    to { width: 65% }
+}
+
+@keyframes progress { 
+    from { }
+
+    to { width: 65% }
+}
+
+/* web-progress */
+.webprogress {
+    background: red;
+    height: 12px;
+    width: 0%;
+    max-width: 100%;
+    -webkit-animation: webprogress 2s 1 forwards;
+    -moz-animation: webprogress 2s 1 forwards;
+    -ms-animation: webprogress 2s 1 forwards;
+    animation: webprogress 2s 1 forwards;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+@-webkit-keyframes webprogress { 
+    from {  }
+
+    to { width: 70% }
+}
+
+@-moz-keyframes webprogress { 
+    from { }
+
+    to { width: 70% }
+}
+
+@-ms-keyframes webprogress { 
+    from { }
+
+    to { width: 70% }
+}
+
+@keyframes webprogress { 
+    from { }
+
+    to { width: 70% }
+}
+
+/* js-progress */
+.jsprogress {
+    background: red;
+    height: 12px;
+    width: 0%;
+    max-width: 100%;
+    -webkit-animation: jsprogress 2s 1 forwards;
+    -moz-animation: jsprogress 2s 1 forwards;
+    -ms-animation: jsprogress 2s 1 forwards;
+    animation: jsprogress 2s 1 forwards;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+@-webkit-keyframes jsprogress { 
+    from {  }
+
+    to { width: 45% }
+}
+
+@-moz-keyframes jsprogress { 
+    from { }
+
+    to { width: 45% }
+}
+
+@-ms-keyframes jsprogress { 
+    from { }
+
+    to { width: 45% }
+}
+
+@keyframes jsprogress { 
+    from { }
+
+    to { width: 45% }
+}
+
+/* #mediaQUERY */
+
+@media screen and (max-width: 568px) {
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    /* Home */
+    
+    #center-banner {
+        margin-top: 60%;
+    }
+
+    #center-banner h1 {
+        font-size: 2rem;
+    }
+
+    #center-banner hr {
+        width: 100%;
+    }
+
+    #footer-nav a {
+        font-size: 0.7rem;
+        margin-left: 0.5rem;
+        margin-right: 0.3rem;
+    }
+
+    /* Objective */
+
+    #background-objective {
+    background-image: url("properties/pictures/objective-map.jpg");
+    background-size: 100% 100%;
+    }
+
+    #objective-title {
+        background-color: rgba(100, 100, 100, 0.5);
+    }
+
+    #objective-title img {
+        width: 3rem;
+        top: 0.4rem;
+    }
+
+    #objective-title h1 {
+        font-size: 3rem;
+    }
+
+    #objective-list {
+        padding: 1rem;
+        margin-top: 7rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 80%;
+        margin-left: 5%;
+        text-align: left;
+    }
+
+    #objective-list ul {
+        list-style-type: none;
+    }
+
+    #objective-list img {
+        width: 0.5rem;
+        top: 1rem;
+        margin-right: 0.5rem;
+    }
+}
